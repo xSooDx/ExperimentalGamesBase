@@ -23,11 +23,10 @@ public class FollowTarget : MonoBehaviour
         UpdatePosition();
     }
 
-    // Update is called once per frame
-    //void LateUpdate()
-    //{
-    //    UpdatePosition();
-    //}
+    private void OnApplicationFocus(bool focus)
+    {
+        Cursor.lockState = focus ? CursorLockMode.Locked : CursorLockMode.None;
+    }
 
 
     void UpdatePosition()
@@ -37,7 +36,7 @@ public class FollowTarget : MonoBehaviour
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        UpdatePosition();
+        if(target) UpdatePosition();
     }
 #endif
 }
