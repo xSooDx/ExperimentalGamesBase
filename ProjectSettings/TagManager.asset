@@ -7,6 +7,9 @@ TagManager:
   - FollowCam
   - Team1
   - Team2
+  - OrbitCenter
+  - Planet
+  - Debris
   layers:
   - Default
   - TransparentFX
@@ -20,6 +23,8 @@ TagManager:
   - PressurePad
   - Team1
   - Team2
+  - Debris
+  - UFOPlayer
   - 
   - 
   - 
@@ -37,9 +42,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - IgnoreAll
   m_SortingLayers:
   - name: Default
     uniqueID: 0

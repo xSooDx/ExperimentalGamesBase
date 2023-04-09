@@ -1,0 +1,959 @@
+fileFormatVersion: 2
+guid: 85b45dca0ade48441b05b176375df0ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 151007207732215442
+    second: BasicShapes_0
+  - first:
+      213: 5152544384245531015
+    second: BasicShapes_1
+  - first:
+      213: -423936620066956337
+    second: BasicShapes_2
+  - first:
+      213: 8829517108280701025
+    second: BasicShapes_3
+  - first:
+      213: 893992769330778479
+    second: BasicShapes_4
+  - first:
+      213: -439340586621577673
+    second: BasicShapes_5
+  - first:
+      213: 9007178948967763367
+    second: BasicShapes_6
+  - first:
+      213: 4600640370601339193
+    second: BasicShapes_7
+  - first:
+      213: 5932437067121808278
+    second: BasicShapes_8
+  - first:
+      213: -4707409918649925025
+    second: BasicShapes_9
+  - first:
+      213: 6752699764158299
+    second: BasicShapes_10
+  - first:
+      213: 2943893423336660382
+    second: BasicShapes_11
+  - first:
+      213: 144308540544199810
+    second: BasicShapes_12
+  - first:
+      213: -8244405613980159420
+    second: BasicShapes_13
+  - first:
+      213: -4609154610044535599
+    second: BasicShapes_14
+  - first:
+      213: -7793215135245461433
+    second: BasicShapes_15
+  - first:
+      213: 3412604755762540630
+    second: BasicShapes_16
+  - first:
+      213: 7861132846748424093
+    second: BasicShapes_17
+  - first:
+      213: 4642366728021456906
+    second: BasicShapes_18
+  - first:
+      213: -6593334623914314382
+    second: BasicShapes_19
+  - first:
+      213: -5606275655858787778
+    second: BasicShapes_20
+  - first:
+      213: 8859939105435873926
+    second: BasicShapes_21
+  - first:
+      213: -5985799754658513668
+    second: BasicShapes_22
+  - first:
+      213: -6943937976581445690
+    second: BasicShapes_23
+  - first:
+      213: 4347255378572156155
+    second: BasicShapes_24
+  - first:
+      213: -8017746061301548502
+    second: BasicShapes_25
+  - first:
+      213: 3612847775659787950
+    second: BasicShapes_26
+  - first:
+      213: 8585446626725173383
+    second: BasicShapes_27
+  - first:
+      213: 3526540563510858685
+    second: BasicShapes_28
+  - first:
+      213: 7839380650889511482
+    second: BasicShapes_29
+  - first:
+      213: 4905162782247949976
+    second: BasicShapes_30
+  - first:
+      213: -4640890109542372945
+    second: BasicShapes_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BasicShapes_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 782
+        width: 228
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ef66f514c781200800000000000000
+      internalID: 151007207732215442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 798
+        width: 228
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781836071d3818740800000000000000
+      internalID: 5152544384245531015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_2
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 783
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb11a1e3efdd1af0800000000000000
+      internalID: -423936620066956337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_3
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 789
+        width: 226
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1603e49770fb88a70800000000000000
+      internalID: 8829517108280701025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_4
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 798
+        width: 228
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f619ab7efa9186c00800000000000000
+      internalID: 893992769330778479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_5
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 783
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736520f601627e9f0800000000000000
+      internalID: -439340586621577673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_6
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 783
+        width: 228
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad8991388deffc70800000000000000
+      internalID: 9007178948967763367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_7
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 783
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939a305ba02c8df30800000000000000
+      internalID: 4600640370601339193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 525
+        width: 228
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693d726c410445250800000000000000
+      internalID: 5932437067121808278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 541
+        width: 228
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5288b2be9bebaeb0800000000000000
+      internalID: -4707409918649925025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_10
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 526
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fa7be6b8df71000800000000000000
+      internalID: 6752699764158299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_11
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 532
+        width: 226
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d179a987fcad820800000000000000
+      internalID: 2943893423336660382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_12
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 541
+        width: 228
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c21316adfa00200800000000000000
+      internalID: 144308540544199810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_13
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 526
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442f97a56ccf59d80800000000000000
+      internalID: -8244405613980159420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_14
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 526
+        width: 228
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcf0717d4ef800c0800000000000000
+      internalID: -4609154610044535599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_15
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 526
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7481f7def10f8d390800000000000000
+      internalID: -7793215135245461433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_16
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 268
+        width: 228
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650f802d1f10c5f20800000000000000
+      internalID: 3412604755762540630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_17
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 284
+        width: 228
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97589e8caa581d60800000000000000
+      internalID: 7861132846748424093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_18
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 269
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08bfcc51fffc6040800000000000000
+      internalID: 4642366728021456906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_19
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 274
+        width: 226
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275bd40b715cf74a0800000000000000
+      internalID: -6593334623914314382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_20
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 284
+        width: 228
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3aed9b8ef18232b0800000000000000
+      internalID: -5606275655858787778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_21
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 270
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682f817aca3d4fa70800000000000000
+      internalID: 8859939105435873926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_22
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 269
+        width: 228
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc75f656da2eeca0800000000000000
+      internalID: -5985799754658513668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_23
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 269
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7a48b633d22af90800000000000000
+      internalID: -6943937976581445690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_24
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 15
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc13bbebbd845c30800000000000000
+      internalID: 4347255378572156155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_25
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 14
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a75d4ef6e3bb090800000000000000
+      internalID: -8017746061301548502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_26
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 15
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea603c709e9632230800000000000000
+      internalID: 3612847775659787950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_27
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 70
+        width: 228
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78897082832a52770800000000000000
+      internalID: 8585446626725173383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_28
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 70
+        width: 228
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3121645f9c0f030800000000000000
+      internalID: 3526540563510858685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_29
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 70
+        width: 228
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32075bca231bcc60800000000000000
+      internalID: 7839380650889511482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_30
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8961b51df83a21440800000000000000
+      internalID: 4905162782247949976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicShapes_31
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa96a1ba80f389fb0800000000000000
+      internalID: -4640890109542372945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BasicShapes_30: 4905162782247949976
+      BasicShapes_17: 7861132846748424093
+      BasicShapes_18: 4642366728021456906
+      BasicShapes_25: -8017746061301548502
+      BasicShapes_22: -5985799754658513668
+      BasicShapes_23: -6943937976581445690
+      BasicShapes_19: -6593334623914314382
+      BasicShapes_7: 4600640370601339193
+      BasicShapes_28: 3526540563510858685
+      BasicShapes_0: 151007207732215442
+      BasicShapes_3: 8829517108280701025
+      BasicShapes_12: 144308540544199810
+      BasicShapes_26: 3612847775659787950
+      BasicShapes_9: -4707409918649925025
+      BasicShapes_6: 9007178948967763367
+      BasicShapes_1: 5152544384245531015
+      BasicShapes_20: -5606275655858787778
+      BasicShapes_27: 8585446626725173383
+      BasicShapes_15: -7793215135245461433
+      BasicShapes_8: 5932437067121808278
+      BasicShapes_16: 3412604755762540630
+      BasicShapes_11: 2943893423336660382
+      BasicShapes_21: 8859939105435873926
+      BasicShapes_31: -4640890109542372945
+      BasicShapes_5: -439340586621577673
+      BasicShapes_10: 6752699764158299
+      BasicShapes_13: -8244405613980159420
+      BasicShapes_2: -423936620066956337
+      BasicShapes_29: 7839380650889511482
+      BasicShapes_14: -4609154610044535599
+      BasicShapes_4: 893992769330778479
+      BasicShapes_24: 4347255378572156155
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
