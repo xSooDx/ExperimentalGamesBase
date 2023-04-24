@@ -1664,6 +1664,8 @@ MonoBehaviour:
   healthText: {fileID: 1824870998088524307}
   healthBar: {fileID: 1824870999408525965}
   pauseMenu: {fileID: 8671632737471683260}
+  sensitivitySlider: {fileID: 1100652811}
+  ft: {fileID: 0}
 --- !u!1 &1824870999408525955
 GameObject:
   m_ObjectHideFlags: 0

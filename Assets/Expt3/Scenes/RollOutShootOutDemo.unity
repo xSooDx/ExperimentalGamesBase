@@ -9200,6 +9200,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99649954, y: 0.99649537, z: 0.9964957}
   m_Center: {x: 0, y: -0.00000016391277, z: 0}
+--- !u!114 &1515008091 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2369644717956335340, guid: ebf7897a8ec8032419de28664c667eb0, type: 3}
+  m_PrefabInstance: {fileID: 2369644716795514788}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14efe8b308318af4f83b425b67896009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1515459528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13708,6 +13719,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1824870999193755619, guid: e93604d6e94e7644ea329c5150316d89, type: 3}
+      propertyPath: ft
+      value: 
+      objectReference: {fileID: 1515008091}
     - target: {fileID: 1824870999193755620, guid: e93604d6e94e7644ea329c5150316d89, type: 3}
       propertyPath: m_Name
       value: HUD

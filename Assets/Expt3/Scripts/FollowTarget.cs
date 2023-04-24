@@ -7,9 +7,8 @@ public class FollowTarget : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] Vector3 offset;
 
-    [SerializeField]
     [Range(0f, 1f)]
-    float lookSensitivity;
+    public float lookSensitivity;
     // Start is called before the first frame update
     void Start()
     {

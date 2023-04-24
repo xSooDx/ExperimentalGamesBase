@@ -10,12 +10,19 @@ public class HUDManager : GenericSingletonClass<HUDManager>
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField] Slider healthBar;
     [SerializeField] CanvasGroup pauseMenu;
+    [SerializeField] Slider sensitivitySlider;
+    [SerializeField] FollowTarget ft;
 
     bool isPaused = false;
     // Start is called before the first frame update
     void Start()
     {
         pauseMenu.alpha = 0f;
+        sensitivitySlider.value = ft.lookSensitivity;
+        sensitivitySlider.onValueChanged.AddListener((value) =>
+        {
+            ft.lookSensitivity = Mathf.Clamp01(value);
+        });
     }
 
     // Update is called once per frame
@@ -46,6 +53,8 @@ public class HUDManager : GenericSingletonClass<HUDManager>
         healthBar.value = health / maxHealth;
         healthText.text = $"{(int)health}/{(int)maxHealth}";
     }
+
+    
 
     public void Exit()
     {
