@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: {x: 30, y: 10, z: 30}
   enemyPrefab: {fileID: 9198332073386227904, guid: 065b34cf1db35584f9d5bece88bcef23, type: 3}
-  maxSpawnInterval: 12
-  minSpawnInterval: 5
+  maxSpawnInterval: 16
+  minSpawnInterval: 8
   floorMask:
     serializedVersion: 2
     m_Bits: 1

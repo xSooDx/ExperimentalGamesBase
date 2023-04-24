@@ -445,7 +445,7 @@ MonoBehaviour:
   m_turret: {fileID: 4015133995973167093}
   m_projectilePrefab: {fileID: 1247479169769194295, guid: b4479fd454d6f904e9b93cb195b45a00, type: 3}
   m_projectileSpawn: {fileID: 8993126535173239375}
-  m_timeToFire: 2.5
+  m_timeToFire: 5
 --- !u!114 &4763397066752801608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,6 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 20
+  isShielded: 0
 --- !u!54 &762824044365498499
 Rigidbody:
   m_ObjectHideFlags: 0

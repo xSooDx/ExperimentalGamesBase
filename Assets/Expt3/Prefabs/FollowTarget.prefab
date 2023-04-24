@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   offset: {x: 0, y: 1, z: 0}
-  lookSensitivity: 150
+  lookSensitivity: 1
 --- !u!212 &632804411153626609
 SpriteRenderer:
   m_ObjectHideFlags: 0

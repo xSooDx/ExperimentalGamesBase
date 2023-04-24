@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 35
-  explosionRadius: 5
+  explosionRadius: 4
   explosionForce: 150
   maxDamage: 10
   explosionParticles: {fileID: 5634019368140977244, guid: efa74fa037dc27449964b4e26301b802, type: 3}

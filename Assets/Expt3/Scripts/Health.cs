@@ -21,12 +21,13 @@ public class Health : MonoBehaviour
         {
             Die();
         }
+        Debug.Log($"{amount} - {currentHealth}, {gameObject.name}");
     }
 
     void Die()
     {
         // Spawn Death effect
-        if(gameObject.CompareTag("Player"))
+        if (gameObject.CompareTag("Player"))
         {
             gameObject.SetActive(false);
         }
@@ -34,6 +35,6 @@ public class Health : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        
+
     }
 }

@@ -34,27 +34,31 @@ public class Projectile : MonoBehaviour
     {
         if (!isQuitting)
         {
+            HashSet<Rigidbody> checkedRBs = new HashSet<Rigidbody>();
+            HashSet<Transform> checkedTransforms = new HashSet<Transform>();
             Instantiate(explosionParticles, transform.position, Quaternion.identity);
             Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
             // ToDo: Play particle effects
             foreach (Collider c in colliders)
             {
-                if (c.attachedRigidbody)
+                if (c.attachedRigidbody && !checkedRBs.Contains(c.attachedRigidbody))
                 {
                     Health hc = c.attachedRigidbody.GetComponent<Health>();
                     c.attachedRigidbody.AddExplosionForce(explosionForce, transform.position, explosionRadius);
                     if (hc)
                     {
-                        hc.TakeDamage(maxDamage * (1f - ((c.ClosestPoint(transform.position) - transform.position).magnitude / explosionRadius)));
+                        hc.TakeDamage(maxDamage);
                     }
+                    checkedRBs.Add(c.attachedRigidbody);
                 }
                 else
                 {
                     Health hc = c.transform.GetComponent<Health>();
                     if (hc)
                     {
-                        hc.TakeDamage(maxDamage * (1f - ((c.ClosestPoint(transform.position) - transform.position).magnitude / explosionRadius)));
+                        hc.TakeDamage(maxDamage);
                     }
+                    checkedTransforms.Add(c.transform);
                 }
             }
         }

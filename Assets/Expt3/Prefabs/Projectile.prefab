@@ -63,8 +63,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 100
-  explosionRadius: 5
+  explosionRadius: 2
   explosionForce: 150
+  maxDamage: 25
   explosionParticles: {fileID: 5634019368140977244, guid: efa74fa037dc27449964b4e26301b802, type: 3}
 --- !u!1 &8846527654019812081
 GameObject:

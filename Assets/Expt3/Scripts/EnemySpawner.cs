@@ -20,9 +20,7 @@ public class EnemySpawner : MonoBehaviour
             Vector3 spawnPoint = new Vector3(Random.Range(-size.x, size.x), size.y, Random.Range(-size.z, size.z)) / 2;
             Debug.DrawRay(transform.position + spawnPoint, Vector3.down, Color.red, 5f);
             if (Physics.Raycast(transform.position + spawnPoint, Vector3.down, out RaycastHit hit, size.y, floorMask))
-            {
-                Debug.Log("Yo where? " + hit.point);
-                
+            {                
                 Instantiate(enemyPrefab, hit.point, Quaternion.identity);
             }
             else

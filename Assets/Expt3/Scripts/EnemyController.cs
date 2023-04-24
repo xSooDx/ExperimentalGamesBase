@@ -22,15 +22,16 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_turret.transform.LookAt(target);
-        fireTimer -= Time.deltaTime;
+        
     }
 
     private void LateUpdate()
     {
-        if(Physics.Raycast(m_projectileSpawn.position, m_projectileSpawn.forward, out RaycastHit hit))
+        m_turret.transform.LookAt(target);
+        if (Physics.Raycast(m_projectileSpawn.position, m_projectileSpawn.forward, out RaycastHit hit))
         {
-            if(hit.transform.CompareTag("Player"))
+            fireTimer -= Time.fixedDeltaTime;
+            if (hit.transform.CompareTag("Player"))
             {
                 Shoot();
             }
