@@ -24,6 +24,10 @@ public class PressurePad : MonoBehaviour
         {
             currentPressure -= Time.deltaTime;
             body.localScale = startScale * currentPressure / pressureDuration;
+            if (body.localScale.sqrMagnitude < 0.01f)
+            {
+                body.localScale = startScale * 0.1f;
+            }
             if (currentPressure <= 0) {
                 onPadCaptured.Invoke();
                 Destroy(this.gameObject); 

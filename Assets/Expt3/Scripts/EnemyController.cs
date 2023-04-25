@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void LateUpdate()
@@ -43,11 +44,15 @@ public class EnemyController : MonoBehaviour
 
     void Shoot()
     {
-        if(fireTimer <= 0f)
+        if (fireTimer <= 0f)
         {
             Instantiate(m_projectilePrefab, m_projectileSpawn.position, m_projectileSpawn.rotation);
             fireTimer = m_timeToFire;
         }
-        
+    }
+
+    void OnDestroy()
+    {
+        EnemySpawner.spawnCount--;
     }
 }

@@ -31,6 +31,9 @@ public class BallBotController : MonoBehaviour
     bool isJumping = false;
     bool isDashing = false;
     bool isGripable = false;
+    bool isGrounded = false;
+
+    Collider[] grippableColliders;
 
     public bool IsRolling
     {
@@ -65,10 +68,10 @@ public class BallBotController : MonoBehaviour
     void Update()
     {
 
-        Collider[] colliders = Physics.OverlapSphere(transform.position, m_ballCollider.radius + 0.01f, m_floorLayerMask);
+        grippableColliders = Physics.OverlapSphere(transform.position, m_ballCollider.radius + 0.01f, m_floorLayerMask);
 
 
-        isGripable = colliders.Length > 0;
+        isGripable = grippableColliders.Length > 0;
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -86,21 +89,19 @@ public class BallBotController : MonoBehaviour
             }
         }
         Debug.DrawRay(transform.position, Vector3.down, Color.red, 5f);
-        if (Input.GetKeyDown(KeyCode.Space) && Physics.SphereCast(transform.position, .2f, Vector3.down, out RaycastHit hitInfo, 1f, m_floorLayerMask))
+        isGrounded = Physics.SphereCast(transform.position, .2f, Vector3.down, out RaycastHit hitInfo, 1f, m_floorLayerMask);
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             if (!IsRolling)
             {
                 IsRolling = true;
-                //isJumping = true;
             }
-            //else
-            //{
-            //    if (isGrounded)
-            //    {
-            //        IsRolling = false;
-            //    }
-            //}
             isJumping = true;
+        }
+
+        if(Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            IsRolling = !IsRolling;
         }
 
         if (!m_isRolling && Input.GetMouseButtonDown(0))
@@ -122,6 +123,10 @@ public class BallBotController : MonoBehaviour
             if (rollVec != Vector3.zero)
             {
                 m_rigidbody.AddForce(maxRollForce * rollVec * Time.deltaTime, ForceMode.Acceleration);
+            }
+            if(isGrounded)
+            {
+                m_rigidbody.AddForce(downForce * Vector3.down * Time.deltaTime, ForceMode.Acceleration);
             }
         }
 
@@ -147,12 +152,6 @@ public class BallBotController : MonoBehaviour
         {
             if (m_isRolling)
             {
-                //if (isJumping)
-                //{
-                //    Vector3 jumpVec = transform.up * jumpForce;
-                //    m_rigidbody.AddForce(jumpVec, ForceMode.Impulse);
-                //    isJumping = false;
-                //}
                 //else
                 if (isDashing)
                 {
