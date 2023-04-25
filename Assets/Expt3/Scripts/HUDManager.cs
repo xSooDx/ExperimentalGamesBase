@@ -11,18 +11,22 @@ public class HUDManager : GenericSingletonClass<HUDManager>
     [SerializeField] Slider healthBar;
     [SerializeField] CanvasGroup pauseMenu;
     [SerializeField] Slider sensitivitySlider;
-    [SerializeField] FollowTarget ft;
+    [SerializeField] public FollowTarget ft;
+
+    [SerializeField] public float currentSensitivity;
 
     bool isPaused = false;
     // Start is called before the first frame update
     void Start()
     {
         pauseMenu.alpha = 0f;
-        sensitivitySlider.value = ft.lookSensitivity;
+        //currentSensitivity = sensitivitySlider.value;
         sensitivitySlider.onValueChanged.AddListener((value) =>
         {
-            ft.lookSensitivity = Mathf.Clamp01(value);
+            ft.lookSensitivity = value;
         });
+        sensitivitySlider.value = currentSensitivity;
+        ft.lookSensitivity = currentSensitivity;
     }
 
     // Update is called once per frame

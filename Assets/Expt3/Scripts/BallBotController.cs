@@ -24,10 +24,14 @@ public class BallBotController : MonoBehaviour
     [SerializeField] TrailRenderer m_trailRenderer;
     [SerializeField] float speedDamageMultiplier;
     [SerializeField] Health m_health;
+    [SerializeField] float downForce = 50f;
 
     bool m_isRolling = true;
     bool wasRollingChanged = false;
     bool isJumping = false;
+    bool isDashing = false;
+    bool isGripable = false;
+
     public bool IsRolling
     {
         get
@@ -60,29 +64,43 @@ public class BallBotController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Collider[] colliders = Physics.OverlapSphere(transform.position, m_ballCollider.radius + 0.01f, m_floorLayerMask);
+
+
+        isGripable = colliders.Length > 0;
+
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             if (IsRolling)
             {
-                Collider[] colliders = Physics.OverlapSphere(transform.position, m_ballCollider.radius + 0.01f, m_floorLayerMask);
-                if (colliders.Length > 0)
+                if (isGripable)
                 {
                     IsRolling = false;
                 }
             }
             else
             {
+                isDashing = true;
                 IsRolling = true;
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        Debug.DrawRay(transform.position, Vector3.down, Color.red, 5f);
+        if (Input.GetKeyDown(KeyCode.Space) && Physics.SphereCast(transform.position, .2f, Vector3.down, out RaycastHit hitInfo, 1f, m_floorLayerMask))
         {
             if (!IsRolling)
             {
                 IsRolling = true;
-                isJumping = true;
+                //isJumping = true;
             }
+            //else
+            //{
+            //    if (isGrounded)
+            //    {
+            //        IsRolling = false;
+            //    }
+            //}
+            isJumping = true;
         }
 
         if (!m_isRolling && Input.GetMouseButtonDown(0))
@@ -99,10 +117,19 @@ public class BallBotController : MonoBehaviour
         Vector3 rollVec = inputMoveVec.normalized;
 
         // Roll
-        if (m_isRolling && rollVec != Vector3.zero)
+        if (m_isRolling)
         {
-            m_rigidbody.AddForce(maxRollForce * rollVec * Time.deltaTime, ForceMode.Acceleration);
+            if (rollVec != Vector3.zero)
+            {
+                m_rigidbody.AddForce(maxRollForce * rollVec * Time.deltaTime, ForceMode.Acceleration);
+            }
         }
+
+        if (isGripable)
+        {
+            m_rigidbody.AddForce(Vector3.down * downForce * Time.deltaTime, ForceMode.Acceleration);
+        }
+
         if (!m_isRolling)
         {
             if (Physics.Raycast(cameraReference.position, cameraReference.forward, out RaycastHit hit))
@@ -120,20 +147,29 @@ public class BallBotController : MonoBehaviour
         {
             if (m_isRolling)
             {
-                if (isJumping)
-                {
-                    Vector3 jumpVec = transform.up * jumpForce;
-                    m_rigidbody.AddForce(jumpVec, ForceMode.Impulse);
-                    isJumping = false;
-                }
-                else
+                //if (isJumping)
+                //{
+                //    Vector3 jumpVec = transform.up * jumpForce;
+                //    m_rigidbody.AddForce(jumpVec, ForceMode.Impulse);
+                //    isJumping = false;
+                //}
+                //else
+                if (isDashing)
                 {
                     Vector3 dashVector = dashForce * inputMoveVec;
                     dashVector.y = upwardDashForce;
                     m_rigidbody.AddForce(dashVector, ForceMode.Impulse);
+                    isDashing = false;
                 }
             }
             wasRollingChanged = false;
+        }
+
+        if (isJumping)
+        {
+            Vector3 jumpVec = Vector3.up * jumpForce;
+            m_rigidbody.AddForce(jumpVec, ForceMode.Impulse);
+            isJumping = false;
         }
 
 
@@ -142,6 +178,11 @@ public class BallBotController : MonoBehaviour
 
         m_trailRenderer.enabled = currentSpeed > m_minDamageSpeed;
 
+        
+    }
+
+    public void OnHealthChange()
+    {
         HUDManager.Instance.UpdateHealth(m_health.currentHealth, m_health.maxHealth);
     }
 

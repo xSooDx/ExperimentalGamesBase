@@ -10,6 +10,7 @@ TagManager:
   - OrbitCenter
   - Planet
   - Debris
+  - PressurePad
   layers:
   - Default
   - TransparentFX

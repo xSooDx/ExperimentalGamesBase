@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
     public float maxHealth = 100f;
     public float currentHealth;
     public bool isShielded = false;
+
+    public UnityEvent onHealthChange;
 
     void Start()
     {
@@ -22,6 +25,7 @@ public class Health : MonoBehaviour
             Die();
         }
         Debug.Log($"{amount} - {currentHealth}, {gameObject.name}");
+        onHealthChange.Invoke();
     }
 
     void Die()

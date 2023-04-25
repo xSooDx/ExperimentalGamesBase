@@ -7,18 +7,28 @@ public class FollowTarget : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] Vector3 offset;
 
-    [Range(0f, 1f)]
-    public float lookSensitivity;
+    [Range(0f, 100f)]
+    public float lookSensitivity = 0.5f;
     // Start is called before the first frame update
+
     void Start()
     {
+        HUDManager.Instance.ft = this;
+        lookSensitivity = HUDManager.Instance.currentSensitivity;
         transform.parent = null;
     }
 
     private void Update()
     {
-        float hAxis = Input.GetAxisRaw("Mouse X") * Screen.width;
-        float vAxis = Input.GetAxisRaw("Mouse Y") * Screen.height;
+        float hAxis = Input.GetAxis("Mouse X");
+        float vAxis = Input.GetAxis("Mouse Y");
+
+        //verticalRotation -= mouseY;
+        //verticalRotation = Mathf.Clamp(verticalRotation, -clampAngle, clampAngle);
+
+        //transform.localRotation = Quaternion.Euler(verticalRotation, 0.0f, 0.0f);
+        //transform.parent.Rotate(Vector3.up * mouseX);
+
         Vector3 roatationVec = new Vector3(-vAxis, hAxis, 0) * lookSensitivity * Time.deltaTime;
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + roatationVec);
         UpdatePosition();

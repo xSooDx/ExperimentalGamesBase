@@ -292,7 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxRollForce: 500
   dashForce: 125
-  upwardDashForce: 20
+  upwardDashForce: 10
   jumpForce: 75
   m_body: {fileID: 2369644718258436878}
   m_turret: {fileID: 2369644717879162114}
@@ -309,6 +309,8 @@ MonoBehaviour:
   m_minDamageSpeed: 10
   m_trailRenderer: {fileID: 394501812}
   speedDamageMultiplier: 10
+  m_health: {fileID: 0}
+  downForce: 200
 --- !u!114 &3789491022602486187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +326,21 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   isShielded: 0
+  onHealthChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2369644716669991425}
+        m_TargetAssemblyTypeName: BallBotController, Assembly-CSharp
+        m_MethodName: OnHealthChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2369644716798081347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1110,10 @@ PrefabInstance:
     - target: {fileID: 632804411153626620, guid: 15a6780310aeb124cbaa14464ab21f4e, type: 3}
       propertyPath: m_Name
       value: FollowTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 632804411153626620, guid: 15a6780310aeb124cbaa14464ab21f4e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15a6780310aeb124cbaa14464ab21f4e, type: 3}

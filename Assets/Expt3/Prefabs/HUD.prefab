@@ -424,7 +424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &556492042
 RectTransform:
   m_ObjectHideFlags: 0
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 940882781}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 2000
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1368,7 +1368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 4.999999, y: 0}
+  m_AnchoredPosition: {x: 5, y: 0}
   m_SizeDelta: {x: 20.000002, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1824870998333151756
@@ -1666,6 +1666,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 8671632737471683260}
   sensitivitySlider: {fileID: 1100652811}
   ft: {fileID: 0}
+  currentSensitivity: 1000
 --- !u!1 &1824870999408525955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1677,7 +1678,7 @@ GameObject:
   - component: {fileID: 1824870999408525954}
   - component: {fileID: 1824870999408525965}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1751,9 +1752,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
